@@ -9,8 +9,7 @@ http://www.fischl.de/usbtin/
 Difference to the orginal
 -------------------------
 
-- added galvanic isolation
-- no special hardware needed (eg TI ISO1050)
+- added galvanic isolation - no special hardware needed (eg TI ISO1050)
 - fits into 5cm x 5cm square for cheap PCB
 - one layer design for homebrew ( only one bridge)
 

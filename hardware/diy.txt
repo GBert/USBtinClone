@@ -1,0 +1,27 @@
+Changed for DIY PCB
+
+
+Vias
+===
+<via x="17.78" y="27.305" extent="1-16" drill="0.6" shape="square"/>
+->
+<via x="17.78" y="27.305" extent="1-16" drill="0.8128" diameter="1.6764" shape="octagon"/>
+
+Pads
+====
+
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+->
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/> 
+drill="0.8128" shape="long"
+
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+->
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+
+<pad name="2" x="2.413" y="0" drill="0.8128" />
+->
+<pad name="1" x="-2.413" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+
+
+

@@ -30,7 +30,24 @@ Programming
 First step is to programm the bootloader on the PIC18F14K50.
 If you don't own a PIC programmer use a cheap USB serial converter
 and k16 from: http://dev.kewl.org/k8048/Doc/
-The converter must have RTS/DTR/CTS to programm the PIC. Programming
-is slow, due to USB bitbanging.
+The converter must have RTS/DTR/CTS to programm the PIC:
+```
+cp2102                            PICMicro
+======                            ========
+
+3V3-------------------------------VDD
+
+GND-------------------------------VSS
+
+TX (1)----------------------------VPP
+
+RTS-------------------------------PGC
+
+DTR-----------1000R----------+----PGD
+                             |
+CTS--------------------------+
+```
+
+Programming is slow, due to USB bitbanging.
 
 BTW: the k16 is the "fastest PIC programmer in the west" _Darron Broad_

@@ -14264,9 +14264,9 @@ DIN A4, landscape with extra doc field</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="P+5" library="supply1" deviceset="VCC/2" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC/2" device="" value="5V"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
-<part name="P+6" library="supply1" deviceset="VCC/2" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC/2" device="" value="5V"/>
 <part name="GND7" library="supply1" deviceset="GNDA" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -14276,7 +14276,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="R6" library="resistor" deviceset="R-EU_" device="0204/7" value="390"/>
 <part name="P+9" library="supply1" deviceset="VCC/2" device="" value="5V"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
-<part name="P+11" library="supply1" deviceset="VCC/2" device=""/>
+<part name="P+11" library="supply1" deviceset="VCC/2" device="" value="5V"/>
 <part name="GND10" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>

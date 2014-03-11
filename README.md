@@ -62,6 +62,8 @@ FWSLEEP=30
 DEBUG=1
 ```
 
-Programming is slow, due to USB bitbanging.
-
+Programming is slow, due to USB bitbanging. On systems with free GPIOs you
+could use the lightening fast GPIO mode.
 BTW: the k16 is the "fastest PIC programmer in the west" _Darron Broad_
+
+Normally you only need once to programm the bootloader. 

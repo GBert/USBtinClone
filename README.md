@@ -9,7 +9,7 @@ http://www.fischl.de/usbtin/
 This is a CAN2USB adapter which uses the SLCAN API. The SLCAN protocol doesn't
 have the fastest API (all CAN frames are transfered into human readable ASCII),
 but well known. Even Linux provides a kernel module for SocketCAN. 
-The SLCAN is also known as Lawicel protocol.
+The SLCAN API is also known as Lawicel protocol.
 
 Difference to the orginal
 -------------------------
@@ -32,3 +32,7 @@ If you don't own a PIC programmer use a cheap USB cp2104
 to flash the bootloader:
 
 https://github.com/GBert/CP2104_GPIO
+
+an then programm the sbtin code with:
+
+http://code.google.com/p/mphidflash/

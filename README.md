@@ -28,42 +28,7 @@ Programming
 -----------
 
 First step is to programm the bootloader on the PIC18F14K50.
-If you don't own a PIC programmer use a cheap USB serial converter
-and k16 from: http://dev.kewl.org/k8048/Doc/ .
-The converter must have RTS/DTR/CTS to programm the PIC:
-```
-cp2102                            PICMicro
-======                            ========
+If you don't own a PIC programmer use a cheap USB cp2104
+to flash the bootloader:
 
-5V--------------------------------VDD
-
-GND-------------------------------VSS
-
-TX (1)----------------------------VPP
-
-RTS-------------------------------PGC
-
-DTR-----------1000R----------+----PGD
-                             |
-CTS--------------------------+
-```
-.k8048 file:
-```
-DEVICE=/dev/ttyUSB0
-SLEEP=0
-BITRULES=0x001F
-BUSY=0
-VPP=9
-PGM=22
-PGC=10
-PGD=11
-MCP=0x20
-FWSLEEP=30
-DEBUG=1
-```
-
-Programming is slow, due to USB bitbanging. On systems with free GPIOs you
-could use the lightening fast GPIO mode.
-BTW: the k16 is the "fastest PIC programmer in the west" _Darron Broad_
-
-Normally you only need once to programm the bootloader. 
+https://github.com/GBert/USBtinClone

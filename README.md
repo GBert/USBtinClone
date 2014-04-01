@@ -33,6 +33,6 @@ to flash the bootloader:
 
 https://github.com/GBert/CP2104_GPIO
 
-an then programm the sbtin code with:
+an then programm the usbtin code with:
 
 http://code.google.com/p/mphidflash/

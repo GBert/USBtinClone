@@ -31,4 +31,4 @@ First step is to programm the bootloader on the PIC18F14K50.
 If you don't own a PIC programmer use a cheap USB cp2104
 to flash the bootloader:
 
-https://github.com/GBert/CP2104\_GPIO
+https://github.com/GBert/CP2104_GPIO

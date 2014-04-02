@@ -12,5 +12,5 @@ flash:
 	$(BOOTLOADER) -write main.hex -reset
 
 clean:
-	rm -f $(MAIN).hex funclist $(MAIN).cof $(MAIN).hxl $(MAIN).p1 $(MAIN).sdb startup.* $(MAIN).lst $(MAIN).pre $(MAIN).sym
+	rm -f $(MAIN).hex funclist $(MAIN).cof *.hxl *.p1 $(MAIN).sdb startup.* *.lst *.pre *.sym *.obj *.d *.as
 

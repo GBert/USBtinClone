@@ -36,3 +36,30 @@ https://github.com/GBert/CP2104_GPIO
 and then programm the usbtin code with:
 
 http://code.google.com/p/mphidflash/
+
+### Usage
+
+```
+modprobe can
+modprobe can-raw
+modprobe can-dev 
+modprobe slcan
+# configure 1Mbit  
+slcand -o -s8 -S 3000000 ttyACM0 can0
+ ifconfig -a
+can0      Link encap:UNSPEC  Hardware Adresse 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:16  Metrik:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          Kollisionen:0 Sendewarteschlangenlänge:10 
+          RX-Bytes:0 (0.0 B)  TX-Bytes:0 (0.0 B)
+
+ifconfig can0 up
+ip -s -d link show can0
+4: can0: <NOARP,UP,LOWER_UP> mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT qlen 10
+    link/can 
+    RX: bytes  packets  errors  dropped overrun mcast   
+    0          0        0       0       0       0      
+    TX: bytes  packets  errors  dropped carrier collsns 
+    0          0        0       0       0       0     
+```
